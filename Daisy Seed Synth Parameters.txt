@@ -1,0 +1,67 @@
+Editable Parameters:
+
+Select Program Change 1 thru 29, then adjust the parameters value by moving the 
+Data Slider (Volume = CC#7).
+
+ (1): // Master Tuning
+ (2): // Oscillator #1 Waveform Select
+ (3): // Oscillator #2 Waveform Select
+ (4): // Oscillator Mix
+ (5): // Oscillator #2 De-Tune
+ (6): // Oscillator #2 Scale
+ (7): // Resonance
+ (8): // Oscillator #1 Pulse Width Value
+ (9): // Oscillator #2 Pulse Width Value
+ (10): // VCF Attack
+ (11): // VCF Decay
+ (12): // VCF Sustain
+ (13): // VCF Release
+ (14): // VCA Attack
+ (15): // VCA Decay
+ (16): // VCA Sustain
+ (17): // VCA Release
+ (18): // VCF Key Follow level
+ (19): // ENV Key Follow level
+ (20): // Velocity Routing Select
+ (21): // VCF Envelope level
+ (22): // Mod Wheel LFO rate
+ (23): // PWM LFO rate
+ (24): // PWM LFO Mod level
+ (25): // PWM2 LFO rate
+ (26): // PWM2 LFO Mod level
+ (27): // VCA/VCF LFO rate
+ (28): // VCA/VCF LFO Mod level
+ (29): // VCA/VCF LFO Waveform Select
+
+Select Program Change 36 thru 39 to change the Sequencer's mode.
+
+ (36): // Sequencer Record
+ (37): // Sequencer Record End
+ (38): // Sequencer Stop
+ (39): // Sequencer Play
+
+Select Program Change 40 thru 49 to load a user patch.
+
+ (40): // User Patch Select #1
+ (41): // User Patch Select #2
+ (42): // User Patch Select #3
+ (43): // User Patch Select #4
+ (44): // User Patch Select #5
+ (45): // User Patch Select #6
+ (46): // User Patch Select #7
+ (47): // User Patch Select #8
+ (48): // User Patch Select #9
+ (49): // User Patch Select #10
+
+Select Program Change 50 thru 59 to store a user patch.
+
+ (50): // User Patch Store #1
+ (51): // User Patch Store #2
+ (52): // User Patch Store #3
+ (53): // User Patch Store #4
+ (54): // User Patch Store #5
+ (55): // User Patch Store #6
+ (56): // User Patch Store #7
+ (57): // User Patch Store #8
+ (58): // User Patch Store #9
+ (59): // User Patch Store #10
