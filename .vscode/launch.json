@@ -1,6 +1,20 @@
 {
   "configurations": [
     {
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceRoot}/build/daisynucleosynth.elf",
+      "name": "Debug with ST-Link",
+      "request": "launch",
+      "type": "cortex-debug",
+      "runToEntryPoint": "main",
+      "showDevDebugOutput": "none",
+      "servertype": "stlink",
+      "liveWatch": {
+          "enabled": true,
+          "samplesPerSecond": 4
+        },
+    },
+    {
       "configFiles": [
         "interface/stlink.cfg",
         "target/stm32h7x.cfg"
