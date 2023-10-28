@@ -652,7 +652,7 @@ int main(void)
 {
 	// init hardware
 	hardware.Init(true); // true = boost to 480MHz
-	hardware.SetAudioBlockSize(4);
+	hardware.SetAudioBlockSize(6);
 
 	sysSampleRate = hardware.AudioSampleRate();
 	sysCallbackRate = hardware.AudioCallbackRate();
