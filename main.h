@@ -5,8 +5,7 @@
 // Set sequencer memory to SRAM
 #define WRITE_READ_SRAM_ADDR 0x20000000
 
-// settings
-#define WAVEFORMS_MAX 8
+/* Defines ------------------------------------------------------------------*/
 #define VOICES_MAX 8
 #define FILTER_CUTOFF_MAX 1.0f
 
@@ -23,3 +22,7 @@
 #define MIDI_CHANNEL_ALL 17
 #define MIDI_VELOCITY_MAX 127
 extern uint8_t preset_number;
+
+// System
+#define Boot_Button_Pin GPIO_PIN_3
+#define Boot_Button_GPIO_Port GPIOG

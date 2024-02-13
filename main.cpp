@@ -5,7 +5,6 @@ I (Christopher @Nettech15) have modified it further to run on the Daisy Seed wit
 Synth parameters are now controlled by a Miditech i2-61 midi keyboard.
 Feel free to copy, modify, and improve this code to match your equipment and sound requirements.
 
-Forked from Daisy Seed Synth v1.3.6.
 Currently running Karlsen Low-Pass Filter in place of Infrasonics Moog Filter.
 */
 
@@ -657,23 +656,11 @@ int main(void)
 	sysSampleRate = hardware.AudioSampleRate();
 	sysCallbackRate = hardware.AudioCallbackRate();
 
-	// init qspi flash for saving and loading patches
-	QSPIHandle::Config qspi_config;
-	qspi_config.device = QSPIHandle::Config::Device::IS25LP064A;
-	qspi_config.mode   = QSPIHandle::Config::Mode::MEMORY_MAPPED;
-	qspi_config.pin_config.io0 = {DSY_GPIOF, 8};
-	qspi_config.pin_config.io1 = {DSY_GPIOF, 9};
-	qspi_config.pin_config.io2 = {DSY_GPIOF, 7};
-	qspi_config.pin_config.io3 = {DSY_GPIOF, 6};
-	qspi_config.pin_config.clk = {DSY_GPIOF, 10};
-	qspi_config.pin_config.ncs = {DSY_GPIOG, 6};
-	hardware.qspi.Init(qspi_config);
-
 	// setup vasynth initial values
 	vasynth.Init();
 
 	// load the default patch
-	vasynth.First();
+	vasynth.First(0);
 
 	// Initialize USB Midi 
     MidiUsbHandler::Config midi_cfg;
